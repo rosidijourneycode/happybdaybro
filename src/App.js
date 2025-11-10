@@ -10,7 +10,7 @@ import cake20 from "./assets/20.png";
 import birthdayText from "./assets/birthdaytext.png";
 import "./App.css";
 import Confetti from "./Confetti";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import birthdaySong from "./assets/bdayaudo.mp3";
 
 
@@ -132,7 +132,7 @@ export default function App() {
           try { gainNodeRef.current.disconnect(); } catch (e) {}
           gainNodeRef.current = null;
         }
-      } catch (e) {}
+        } catch (e) {}
       analyserRef.current = null;
     }
     if (audioCtxRef.current) {
