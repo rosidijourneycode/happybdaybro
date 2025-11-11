@@ -38,6 +38,7 @@ export default function App() {
 
 useEffect(() => {
   startMicMonitoring();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
 }, []);
 
   const handleCakeClick = async () => {
