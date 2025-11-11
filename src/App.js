@@ -36,12 +36,10 @@ export default function App() {
     playAudio();
     }, []);
 
-  useEffect(() => {
-    startMicMonitoring();
-    return () => {
-      stopMicMonitoring();
-    };
-  }, []);
+useEffect(() => {
+  startMicMonitoring();
+}, []);
+
   const handleCakeClick = async () => {
     const audio = audioRef.current;
     audio.play();
