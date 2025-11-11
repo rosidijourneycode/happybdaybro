@@ -108,7 +108,7 @@ export default function App() {
   const [showMatthew, setShowMatthew] = useState(false);
   let matthewSrc = null;
   try {
-    matthewSrc = require("./assets/matthew.jpg");
+    matthewSrc = require("./assets/jihan.jpg");
   } catch (e) {
     matthewSrc = null;
   }
@@ -211,7 +211,7 @@ export default function App() {
               <img src={matthewSrc} alt="Matthew" />
             ) : (
               <div style={{ color: "white", padding: 24, fontSize: 20 }}>
-                Matthew
+                Jihan Azhar Noviana
               </div>
             )}
           </div>
