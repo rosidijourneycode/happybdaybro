@@ -10,7 +10,7 @@ import cake20 from "./assets/20.png";
 import birthdayText from "./assets/birthdaytext.png";
 import "./App.css";
 import Confetti from "./Confetti";
-import { useEffect, useRef, useState, useCallback } from "react";
+import { useEffect, useRef, useState } from "react";
 import birthdaySong from "./assets/bdayaudo.mp3";
 
 
